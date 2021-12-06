@@ -12,7 +12,7 @@ Wenbo Zhou<sup>1</sup>,
 Jing Liao<sup>3</sup>,
 Zhentao Tan<sup>1</sup>,
 Lu Yuan<sup>2</sup>, 
-Weiming Zhang<sup>1</sup>,  
+Weiming Zhang<sup>1</sup>, 
 Nenghai Yu<sup>1</sup> <br>
 <sup>1</sup>University of Science and Technology of China, <sup>2</sup>Microsoft Cloud AI, <sup>3</sup>City University of Hong Kong
 
