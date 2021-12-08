@@ -1,7 +1,7 @@
 # HairCLIP
 This repository hosts the official PyTorch implementation of the paper: "**HairCLIP: Design Your Hair by Text and Reference Image**".
 
-Note that `Once our paper is accepted, we will release the code and pre-trained models. Please stay tuned.`
+Our **single** framework supports **hairstyle and hair color editing** individually or jointly, and conditional inputs can come from either **image** or **text** domain. 
 
 <img src='assets/teaser.png'>
 
