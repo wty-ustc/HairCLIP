@@ -40,9 +40,9 @@ Hair editing is an interesting and challenging problem in computer vision and gr
 <img src='assets/cross-modal .png'>
 
 # To Do
+- [x] Release training code
 - [ ] Release testing code
 - [ ] Release pretrained model
-- [ ] Release training code
 
 ## Citation
 
