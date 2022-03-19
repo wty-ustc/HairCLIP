@@ -29,4 +29,6 @@ def main(opts):
 
 if __name__ == '__main__':
 	opts = TrainOptions().parse()
+	if opts.batch_size != 1 or opts.test_batch_size != 1:
+		raise Exception('This version only supports batch size and test batch size to be 1.')
 	main(opts)
