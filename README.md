@@ -17,33 +17,32 @@ Nenghai Yu<sup>1</sup> <br>
 <sup>1</sup>University of Science and Technology of China, <sup>2</sup>Microsoft Cloud AI, <sup>3</sup>City University of Hong Kong
 
 ## News
-**`2022.03.02`**: Our paper is accepted by CVPR2022 and the code will be released soon.  
-**`2022.03.09`**: Our training code is released.
+**`2022.03.02`**: Our paper is accepted by CVPR2022 and the code will be released soon.   
+**`2022.03.09`**: Our training code is released.  
+**`2022.03.19`**: Our testing code and pretrained model are released. 
 
-# Abstract
-Hair editing is an interesting and challenging problem in computer vision and graphics. Many existing methods require well-drawn sketches or masks as conditional inputs for editing, however these interactions are neither straightforward nor efficient. In order to free users from the tedious interaction process, this paper proposes a new hair editing interaction mode, which enables manipulating hair attributes individually or jointly based on the texts or reference images provided by users. For this purpose, we encode the image and text conditions in a shared embedding space and propose a unified hair editing framework by leveraging the powerful image text representation capability of the Contrastive Language-Image Pre-Training (CLIP) model. With the carefully designed network structures and loss functions, our framework can perform high-quality hair editing in a disentangled manner. Extensive experiments demonstrate the superiority of our approach in terms of manipulation accuracy, visual realism of editing results, and irrelevant attribute preservation.
+## Getting Started
+### Pretrained Models
+Please download the pre-trained model from the following link. The HairCLIP model contains the entire architecture, including the mapper and decoder weights.
+| Path | Description
+| :--- | :----------
+|[HairCLIP](https://drive.google.com/file/d/1tGIKWI6xniEULeyADvhu_xzRVcv_31Sx/view?usp=sharing)  | Our pre-trained HairCLIP model.
 
-# Comparison
-## Comparison to Text-Driven Image Manipulation Methods
-<img src='assets/comparison-text.png'>
+If you wish to use the pretrained model for training or inference, you may do so using the flag `--checkpoint_path`.  
+In addition, we provide various auxiliary models and latent codes inverted by [e4e](https://github.com/omertov/encoder4editing) needed for training your own HairCLIP model from scratch.
+| Path | Description
+| :--- | :----------
+|[FFHQ StyleGAN](https://drive.google.com/file/d/1pts5tkfAcWrg4TpLDu6ILF5wHID32Nzm/view?usp=sharing) | StyleGAN model pretrained on FFHQ taken from [rosinality](https://github.com/rosinality/stylegan2-pytorch) with 1024x1024 output resolution.
+|[IR-SE50 Model](https://drive.google.com/file/d/1FS2V756j-4kWduGxfir55cMni5mZvBTv/view?usp=sharing) | Pretrained IR-SE50 model taken from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch) for use in our ID loss during HairCLIP training.
+|[CelebA-HQ Train Set Latent Codes](https://drive.google.com/file/d/1gof8kYc_gDLUT4wQlmUdAtPnQIlCO26q/view?usp=sharing) | Train set latent codes inverted by [e4e](https://github.com/omertov/encoder4editing).
+|[CelebA-HQ Test Set Latent Codes](https://drive.google.com/file/d/1j7RIfmrCoisxx3t-r-KC02Qc8barBecr/view?usp=sharing) | Test set latent codes inverted by [e4e](https://github.com/omertov/encoder4editing).
 
-## Comparison to Hair Transfer Methods
-<img src='assets/comparison-image.png'>
-
-# Application
-## Hair Interpolation
-<img src='assets/interpolation.png'>
-
-## Generalization Ability to Unseen Descriptions
-<img src='assets/generalization.png'>
-
-## Cross-Modal Conditional Inputs
-<img src='assets/cross-modal .png'>
+By default, we assume that all auxiliary models are downloaded and saved to the directory `pretrained_models`.
 
 # To Do
 - [x] Release training code
-- [ ] Release testing code
-- [ ] Release pretrained model
+- [x] Release testing code
+- [x] Release pretrained model
 
 ## Citation
 
