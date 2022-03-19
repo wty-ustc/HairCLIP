@@ -34,8 +34,8 @@ In addition, we provide various auxiliary models and latent codes inverted by [e
 | :--- | :----------
 |[FFHQ StyleGAN](https://drive.google.com/file/d/1pts5tkfAcWrg4TpLDu6ILF5wHID32Nzm/view?usp=sharing) | StyleGAN model pretrained on FFHQ taken from [rosinality](https://github.com/rosinality/stylegan2-pytorch) with 1024x1024 output resolution.
 |[IR-SE50 Model](https://drive.google.com/file/d/1FS2V756j-4kWduGxfir55cMni5mZvBTv/view?usp=sharing) | Pretrained IR-SE50 model taken from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch) for use in our ID loss during HairCLIP training.
-|[CelebA-HQ Train Latent Codes](https://drive.google.com/file/d/1gof8kYc_gDLUT4wQlmUdAtPnQIlCO26q/view?usp=sharing) | Train set latent codes inverted by [e4e](https://github.com/omertov/encoder4editing).
-|[CelebA-HQ Test Latent Codes](https://drive.google.com/file/d/1j7RIfmrCoisxx3t-r-KC02Qc8barBecr/view?usp=sharing) | Test set latent codes inverted by [e4e](https://github.com/omertov/encoder4editing).
+|[Train Latent Codes](https://drive.google.com/file/d/1gof8kYc_gDLUT4wQlmUdAtPnQIlCO26q/view?usp=sharing) | CelebA-HQ train set latent codes inverted by [e4e](https://github.com/omertov/encoder4editing).
+|[Test Latent Codes](https://drive.google.com/file/d/1j7RIfmrCoisxx3t-r-KC02Qc8barBecr/view?usp=sharing) | CelebA-HQ test set latent codes inverted by [e4e](https://github.com/omertov/encoder4editing).
 
 By default, we assume that all auxiliary models are downloaded and saved to the directory `pretrained_models`.
 
