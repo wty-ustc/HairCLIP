@@ -12,14 +12,14 @@ class TrainOptions:
 		self.parser.add_argument('--no_coarse_mapper', default=False, action="store_true")
 		self.parser.add_argument('--no_medium_mapper', default=False, action="store_true")
 		self.parser.add_argument('--no_fine_mapper', default=False, action="store_true")
-		self.parser.add_argument('--latents_train_path', default="", type=str, help="The latents for the training")
-		self.parser.add_argument('--latents_test_path', default="", type=str, help="The latents for the validation")
+		self.parser.add_argument('--latents_train_path', default="/public/weitianyi/text-driven-manipulation/5-23/hairstyle-each4000/mapper/train_faces.pt", type=str, help="The latents for the training")
+		self.parser.add_argument('--latents_test_path', default="/public/weitianyi/text-driven-manipulation/5-23/hairstyle-each4000/mapper/test_faces.pt", type=str, help="The latents for the validation")
 
-		self.parser.add_argument('--hairstyle_ref_img_train_path', default="", type=str, help="The hairstyle reference image for the training")
-		self.parser.add_argument('--hairstyle_ref_img_test_path', default="", type=str, help="The hairstyle reference image for the validation")
-		self.parser.add_argument('--color_ref_img_train_path', default="", type=str, help="The color reference image for the training")
-		self.parser.add_argument('--color_ref_img_test_path', default="", type=str, help="The color reference image for the validation")
-		self.parser.add_argument('--color_ref_img_in_domain_path', default="", type=str, help="The color reference image in domain for the augmentation")
+		self.parser.add_argument('--hairstyle_ref_img_train_path', default="/public/weitianyi/dataset/celeba_hq_train/", type=str, help="The hairstyle reference image for the training")
+		self.parser.add_argument('--hairstyle_ref_img_test_path', default="/public/weitianyi/dataset/celeba_hq_val/", type=str, help="The hairstyle reference image for the validation")
+		self.parser.add_argument('--color_ref_img_train_path', default="/public/weitianyi/dataset/celeba_hq_train/", type=str, help="The color reference image for the training")
+		self.parser.add_argument('--color_ref_img_test_path', default="/public/weitianyi/dataset/celeba_hq_val/", type=str, help="The color reference image for the validation")
+		self.parser.add_argument('--color_ref_img_in_domain_path', default="/public/weitianyi/text-driven-manipulation/7-25/only_color_SPADE/color_descri_dataset/", type=str, help="The color reference image in domain for the augmentation")
 		self.parser.add_argument('--num_for_each_augmented_color', default=4000, type=int, help='Number for each augmented color')
 
 		self.parser.add_argument('--hairstyle_manipulation_prob', default=0.5, type=float, help='Probability of only manipulating the hairstyle')
@@ -68,6 +68,7 @@ class TrainOptions:
 		self.parser.add_argument('--save_interval', default=2000, type=int, help='Model checkpoint interval')
 
 		self.parser.add_argument('--hairstyle_description', required=True, type=str, help='Hairstyle text prompt list')
+		self.parser.add_argument('--color_description', required=True, type=str, help='Color text prompt, eg: purple, red, orange')
 
 
 	def parse(self):

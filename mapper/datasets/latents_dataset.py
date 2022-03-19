@@ -18,7 +18,7 @@ class LatentsDataset(Dataset):
 			self.hairstyle_description_list = fd.read().splitlines()
 
 		self.hairstyle_list = [single_hairstyle_description[:-9] for single_hairstyle_description in self.hairstyle_description_list]
-		self.color_list = ['purple ', 'red ', 'orange ', 'yellow ', 'green ', 'blue ', 'gray ', 'brown ', 'black ', 'white ', 'blond ', 'pink ']
+		self.color_list = [single_color_description.strip()+' ' for single_color_description in self.opts.color_description.split(',')]
 		self.image_transform = transforms.Compose([transforms.ToTensor(),transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
 		if self.status == 'train':
 			self.out_domain_hairstyle_img_path_list = sorted(train_utils.make_dataset(self.opts.hairstyle_ref_img_train_path))
