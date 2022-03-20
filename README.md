@@ -33,7 +33,7 @@ $ pip install tensorflow-io
 Please download the pre-trained model from the following link. The HairCLIP model contains the entire architecture, including the mapper and decoder weights.
 | Path | Description
 | :--- | :----------
-|[HairCLIP](https://drive.google.com/file/d/1tGIKWI6xniEULeyADvhu_xzRVcv_31Sx/view?usp=sharing)  | Our pre-trained HairCLIP model.  
+|[HairCLIP](https://drive.google.com/file/d/1hqZT6ZMldhX3M_x378Sm4Z2HMYr-UwQ4/view?usp=sharing)  | Our pre-trained HairCLIP model.  
 
 If you wish to use the pretrained model for training or inference, you may do so using the flag `--checkpoint_path`.  
 ### Auxiliary Models and Latent Codes
