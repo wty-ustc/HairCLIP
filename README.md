@@ -22,6 +22,13 @@ Nenghai Yu<sup>1</sup> <br>
 **`2022.03.19`**: Our testing code and pretrained model are released. 
 
 ## Getting Started
+### Prerequisites
+```bash
+$ conda install --yes -c pytorch pytorch=1.7.1 torchvision cudatoolkit=11.0
+$ pip install ftfy regex tqdm
+$ pip install git+https://github.com/openai/CLIP.git
+$ pip install tensorflow-io
+```
 ### Pretrained Model
 Please download the pre-trained model from the following link. The HairCLIP model contains the entire architecture, including the mapper and decoder weights.
 | Path | Description
