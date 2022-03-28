@@ -22,7 +22,7 @@ Nenghai Yu<sup>1</sup> <br>
 **`2022.03.19`**: Our testing code and pretrained model are released. 
 
 ## Web Demo
-Upload your own image and try HairClip here with Replicate [![Replicate](https://replicate.com/wty-ustc/hairclip/badge)](https://replicate.com/wty-ustc/hairclip)
+Upload your own image and try HairCLIP here with Replicate [![Replicate](https://replicate.com/wty-ustc/hairclip/badge)](https://replicate.com/wty-ustc/hairclip)
 
 ## Getting Started
 ### Prerequisites
