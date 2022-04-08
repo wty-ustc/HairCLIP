@@ -55,7 +55,8 @@ The main training script can be found in `scripts/train.py`.
 Intermediate training results are saved to `opts.exp_dir`. This includes checkpoints, train outputs, and test outputs.  
 Additionally, if you have tensorboard installed, you can visualize tensorboard logs in `opts.exp_dir/logs`.
 #### **Training the HairCLIP Mapper**
-```
+```bash
+cd mapper
 python scripts/train.py \
 --exp_dir=/path/to/experiment \
 --hairstyle_description="hairstyle_list.txt" \
@@ -91,7 +92,8 @@ python scripts/train.py \
 ### Inference
 The main inference script can be found in `scripts/inference.py`. Inference results are saved to `test_opts.exp_dir`.  
 #### Example of Using Text to Edit Hairstyle
-```
+```bash
+cd mapper
 python scripts/inference.py \
 --exp_dir=/path/to/experiment \
 --checkpoint_path=../pretrained_models/hairclip.pt \
@@ -101,7 +103,8 @@ python scripts/inference.py \
 --hairstyle_description="hairstyle_list.txt" \
 ```
 #### Example of Using Text to Edit Hairstyle Reference Image to Edit Hair Color
-```
+```bash
+cd mapper
 python scripts/inference.py \
 --exp_dir=/path/to/experiment \
 --checkpoint_path=../pretrained_models/hairclip.pt \
