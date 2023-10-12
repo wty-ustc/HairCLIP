@@ -1,4 +1,5 @@
 # HairCLIP: Design Your Hair by Text and Reference Image (CVPR2022)
+<a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Wei_HairCLIP_Design_Your_Hair_by_Text_and_Reference_Image_CVPR_2022_paper.pdf"><img src="https://img.shields.io/badge/Paper-CVPR2022-blue.svg"></a>
 > This repository hosts the official PyTorch implementation of the paper: "**HairCLIP: Design Your Hair by Text and Reference Image**".
 
 Our **single** framework supports **hairstyle and hair color editing** individually or jointly, and conditional inputs can come from either **image** or **text** domain. 
@@ -17,9 +18,10 @@ Nenghai Yu<sup>1</sup> <br>
 <sup>1</sup>University of Science and Technology of China, <sup>2</sup>Microsoft Cloud AI, <sup>3</sup>City University of Hong Kong
 
 ## News
-**`2022.03.02`**: Our paper is accepted by CVPR2022 and the code will be released soon.   
+**`2023.10.12`**: We propose the more performant [HairCLIPv2](https://github.com/wty-ustc/HairCLIPv2) that supports various interaction modalities, which is accepted by ICCV2023! 🎉  
+**`2022.03.19`**: Our testing code and pretrained model are released.  
 **`2022.03.09`**: Our training code is released.  
-**`2022.03.19`**: Our testing code and pretrained model are released. 
+**`2022.03.02`**: Our paper is accepted by CVPR2022 and the code will be released soon.   
 
 ## Web Demo
 Upload your own image and try HairCLIP here with Replicate [![Replicate](https://replicate.com/wty-ustc/hairclip/badge)](https://replicate.com/wty-ustc/hairclip)
@@ -133,5 +135,14 @@ If you find our work useful for your research, please consider citing the follow
   author={Wei, Tianyi and Chen, Dongdong and Zhou, Wenbo and Liao, Jing and Tan, Zhentao and Yuan, Lu and Zhang, Weiming and Yu, Nenghai},
   journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2022}
+}
+```
+
+```
+@article{wei2023hairclipv2,
+  title={HairCLIPv2: Unifying Hair Editing via Proxy Feature Blending},
+  author={Wei, Tianyi and Chen, Dongdong and Zhou, Wenbo and Liao, Jing and Zhang, Weiming and Hua, Gang and Yu, Nenghai},
+  journal={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2023}
 }
 ```
